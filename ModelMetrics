@@ -1,0 +1,72 @@
+sklearn version = 0.24.1
+
+Feature selection:
+  rfe = RFE(estimator=RandomForestClassifier(), n_features_to_select=21)
+    Column: 0, Selected True, Rank: 1.000
+    Column: 1, Selected True, Rank: 1.000
+    Column: 2, Selected True, Rank: 1.000
+    Column: 3, Selected True, Rank: 1.000
+    Column: 4, Selected True, Rank: 1.000
+    Column: 5, Selected True, Rank: 1.000
+    Column: 6, Selected True, Rank: 1.000
+    Column: 7, Selected True, Rank: 1.000
+    Column: 8, Selected True, Rank: 1.000
+    Column: 9, Selected True, Rank: 1.000
+    Column: 10, Selected True, Rank: 1.000
+    Column: 11, Selected True, Rank: 1.000
+    Column: 12, Selected True, Rank: 1.000
+    Column: 13, Selected True, Rank: 1.000
+    Column: 14, Selected True, Rank: 1.000
+    Column: 15, Selected True, Rank: 1.000
+    Column: 16, Selected True, Rank: 1.000
+    Column: 17, Selected False, Rank: 2.000
+    Column: 18, Selected True, Rank: 1.000
+    Column: 19, Selected True, Rank: 1.000
+    Column: 20, Selected True, Rank: 1.000 
+
+Model:
+  model = RandomForestClassifier()
+  best_params = {'bootstrap': True, 'max_depth': 40, 'max_features': 'auto', 'min_samples_split': 2, 'n_estimators': 200}
+  
+  Training Results:
+    
+Train Result:
+================================================
+CLASSIFICATION REPORT:
+                  0        1  accuracy  macro avg  weighted avg
+precision       1.0      1.0       1.0        1.0           1.0
+recall          1.0      1.0       1.0        1.0           1.0
+f1-score        1.0      1.0       1.0        1.0           1.0
+support    122183.0  36655.0       1.0   158838.0      158838.0
+_______________________________________________
+Confusion Matrix: 
+ [[122183      0]
+ [     0  36655]]
+
+Test Result:
+================================================
+CLASSIFICATION REPORT:
+                      0             1  accuracy     macro avg  weighted avg
+precision      0.829281      0.506489  0.816682      0.667885      0.769944
+recall         0.976400      0.107539  0.816682      0.541970      0.816682
+f1-score       0.896847      0.177410  0.816682      0.537129      0.764597
+support    62839.000000  14153.000000  0.816682  76992.000000  76992.000000
+_______________________________________________
+Confusion Matrix: 
+ [[61356  1483]
+ [12631  1522]]
+ 
+  Holdout Results:
+  
+Test Result:
+================================================
+CLASSIFICATION REPORT:
+                       0             1  accuracy      macro avg   weighted avg
+precision       0.951434      0.112907  0.941863       0.532170       0.910093
+recall          0.989350      0.026138  0.941863       0.507744       0.941863
+f1-score        0.970022      0.042449  0.941863       0.506235       0.924291
+support    711200.000000  36881.000000  0.941863  748081.000000  748081.000000
+_______________________________________________
+Confusion Matrix: 
+ [[703626   7574]
+ [ 35917    964]]
