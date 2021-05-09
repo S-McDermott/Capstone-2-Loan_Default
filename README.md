@@ -12,3 +12,12 @@ There is inherent risk in lending money. Will the lender be paid back or will th
 
 Model will predict whether a Lending Club borrower will default on loan payments with 75% accuracy
 
+## Data
+
+https://www.kaggle.com/husainsb/lendingclub-issued-loans?select=lc_loan.csv
+
+https://www.kaggle.com/husainsb/lendingclub-issued-loans?select=lc_2016_2017.csv
+
+https://www.kaggle.com/husainsb/lendingclub-issued-loans?select=us-state-codes.csv
+
+
